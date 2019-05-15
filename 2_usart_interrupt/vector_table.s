@@ -330,7 +330,7 @@
 /*********************************************************/
 
 //IRQ 37
-.weak	usart1_handler
+.weak	usart1_handler // declare an synonymous function in any .c file to override this default_handler
 .thumb_set	usart1_handler,default_handler
 .word usart1_handler
 
